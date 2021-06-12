@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <div class="modal" id="add-modal">
+      <div class="modal__content">
+        <label for="title">Add Your Todo</label>
+        <input type="text" name="title" id="userInput" placeholder="E.g. Making a JavaScript WebPage"/>
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive" id='modalcancelBtn'>Cancel</button>
+        <button class="btn btn--success" id="modaladdBtn">Add</button>
+      </div>
+    </div>
+
+    <header>
+      <h1>Todo List</h1>
+      <button>ADD TODO</button>
+    </header>
+
+    <main>
+      <section id="entry-text" class="card">
+        <p>Your Todo List Is Empty!</p>
+      </section>
+      <ul class='class-todo-list' id="todo-list"></ul>
+    </main>
+  </body>
+</html>
